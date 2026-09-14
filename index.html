@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SwasthyaSetu — Rural Healthcare Platform</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+<header class="topbar">
+  <div class="brand" onclick="showPage('home')"><div class="logo">♥</div><b>Swasthya<span>Setu</span></b></div>
+  <nav id="nav"></nav>
+  <button class="hamb" onclick="toggleMenu()">☰</button>
+</header>
+<div class="statusbar"><span id="onlineDot" class="dot"></span><span id="networkText">Online</span><span class="muted">• Offline-first prototype</span>
+  <div class="access"><button onclick="changeFont(1)">A+</button><button onclick="changeFont(-1)">A−</button><button onclick="toggleContrast()">Contrast</button><select id="language" onchange="changeLanguage()"><option>English</option><option>मराठी</option><option>हिंदी</option></select></div>
+</div>
+<main id="content"></main>
+<footer><div><b>♥ SwasthyaSetu</b><p>Connecting Rural Communities to Better Healthcare</p></div><div><b>Prototype</b><p>AI-assisted • Offline-first • Teleconsultation</p></div><small>© 2026 SwasthyaSetu • Demo / Concept Website</small></footer>
+<div id="toast"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
